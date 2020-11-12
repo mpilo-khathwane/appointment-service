@@ -1,0 +1,12 @@
+pyramid==1.9.1
+pyramid-swagger
+swagger_spec_validator==2.3.1
+uwsgi==2.0.18
+pastescript==2.0.2
+jsonschema[format]==2.6.0
+getconf >= 1.7.0
+bcrypt==3.1.2
+PyJWT==1.4.2
+requests
+mongoengine
+blinker

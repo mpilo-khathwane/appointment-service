@@ -1,0 +1,26 @@
+post:
+  operationId: login
+  summary: Authenticate a user
+  description: Authenticate a users username and password hash to obtain permissions
+  tags:
+    - authenticate
+  parameters:
+    - name: login_details
+      in: body
+      schema:
+        type: object
+        properties:
+          username:
+            type: string
+          password:
+            type: string
+      required: true
+  responses:
+    200:
+      description: Token
+      schema:
+        $ref: '#/definitions/Login'
+    default:
+      description: Unexpected Error
+      schema:
+        $ref: '#/definitions/Error'

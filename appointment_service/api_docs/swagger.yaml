@@ -1,0 +1,12 @@
+swagger: '2.0'
+info: !include info/index.yaml
+host: appointment-service.com
+schemes:
+  - http
+produces:
+  - application/json
+tags:
+  - name: Appointment Service
+    description: Appointment Service
+paths: !include paths/index.yaml
+definitions: !include definitions/index.yaml
